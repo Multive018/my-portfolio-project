@@ -1,13 +1,36 @@
+:root{
+  --primary-color: #000;
+  --secondary-color: #faebd7;
+  --headings-font: "Playfair Display SC", "Times New Roman" , serif;
+  --body-font: "Poppins", serif;
+}
+body{
+  background-color: var(--primary-color);
+}
 h1{
   font-family:"Playfair Display SC";
   font-weight: 600;
-  color:antiquewhite;
+  color: var(--secondary-color);
 }
 h2{
   font-family: "poppins";
   font-weight: 300;
-  color:antiquewhite;
+  color: var(--secondary-color)
 }
-body{
-  background-color: black;
+.job-title{
+  font-size: 24px;
+  opacity: 0.7;
+}
+.hero{
+  margin: 140px 20px;
+}
+.hero p{
+  color: var(--secondary-color);
+  font-size: 32px;
+  font-family: var(--body-font);
+  margin: 0;
+}
+.intro{
+  font-family: var(--headings-font);
+  font-size: 72px;
 }
