@@ -1,6 +1,7 @@
 :root{
   --primary-color: #000;
   --secondary-color: #faebd7;
+  --bar-color: #1E3050;
   --headings-font: "Playfair Display SC", "Times New Roman" , serif;
   --body-font: "Poppins", serif;
 }
@@ -17,12 +18,18 @@ h2{
   font-weight: 300;
   color: var(--secondary-color)
 }
+footer{
+  margin: 0 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
 .job-title{
   font-size: 24px;
   opacity: 0.7;
 }
 .hero{
   margin: 140px 20px;
+  margin-bottom: 170px;
 }
 .hero p{
   color: var(--secondary-color);
@@ -33,4 +40,128 @@ h2{
 .intro{
   font-family: var(--headings-font);
   font-size: 84px;
+}
+.horizontal-rule{
+  color: antiquewhite;
+  margin: 60px;
+}
+.about-me-paragraphs{
+  line-height: 1.5;
+  font-family: var(--body-font);
+}
+.about-section{
+  background-color: #faebd7;
+}
+.about-me-card{
+  margin: 30px 200px;
+  height: max-content;
+  background: var(--secondary-color);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 20px;
+  padding: 25px 10px;
+  z-index: 10;
+  color: var(--primary-color);
+}
+.card-title{
+  font-family: var(--headings-font);
+  font-size: 45px;
+  font-weight:500;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--body-font);
+}
+.skills-title{
+  font-weight: 800;
+  font-size: 24px;
+}
+.skills-icon{
+  font-size: 20px;
+  margin: 4px;
+}
+.skills-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skills-bar, .skills-percentage{
+  width: 300px;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.skills-bar{
+  display: block;
+  margin: 0 auto;
+  background-color: #8aaeec;
+}
+.skills-percentage{
+  display: block;
+  background-color: var(--bar-color);
+}
+.skills-html{
+  width: 95%;
+}
+.skills-css{
+  width: 85%;
+}
+.skills-js{
+  width: 60%;
+}
+@media (max-width: 920px){
+  body{
+    text-align: center;
+  }
+  h1{
+    font-size: 20px;
+  }
+  footer{
+    margin: 0 95px;
+  }
+  p{
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .hero p{
+    font-size: 20px;
+  }
+  .intro{
+    font-size: 45px;
+  }
+  .job-title{
+    font-size: 14px;
+  }
+  .hero{
+   margin-top: 130px;
+   margin-bottom: 80px;
+  }
+  .horizontal-rule{
+    margin: 20px;
+  }
+  .about-me-card{
+    margin: 25px;
+  }
+  .about-me-paragraphs{
+    font-size: 12px;
+  }
+  .card-title{
+    font-size: 30px;
+  }
+  .skills-title{
+    font-size: 18px;
+  }
+  .skills-icon{
+    font-size: 14px;
+  }
+  .skills-data{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .skills-bar{
+    width: 250px;
+  }
 }
