@@ -1,7 +1,8 @@
 :root{
-  --primary-color: #000;
-  --secondary-color: #faebd7;
-  --bar-color: #1E3050;
+  --primary-color: #111827;
+  --secondary-color: #5059BE;
+  --bar-color: #1F2937;
+  --text-color: #fff;
   --headings-font: "Playfair Display SC", "Times New Roman" , serif;
   --body-font: "Poppins", serif;
 }
@@ -23,8 +24,27 @@ footer{
   display: flex;
   justify-content: space-evenly;
 }
+strong{
+  color:var(--primary-color)
+}
+button.navbar-toggler{
+  background-color: var(--secondary-color)!important;
+}
+.dropdown-menu{
+  background-color: var(--secondary-color);
+}
+.dropdown-item{
+  color: var(--primary-color);
+}
+.dropdown-item:hover{
+  color: var(--secondary-color);
+  background-color: var(--bar-color)!important;
+}
 .nav-link{
-  color: #000;
+  color: var(--secondary-color);
+}
+.nav-link:active{
+  color: var(--text-color)!important;
 }
 .portfolio-title{
   margin-top: 70px;
@@ -56,7 +76,7 @@ footer{
   font-family: var(--body-font);
 }
 .about-section{
-  background-color: #faebd7;
+  background-color: #1F2937;
 }
 .about-me-card{
   margin: 30px 200px;
@@ -69,12 +89,20 @@ footer{
   border-radius: 20px;
   padding: 25px 10px;
   z-index: 10;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 .card-title{
   font-family: var(--headings-font);
   font-size: 45px;
   font-weight:500;
+  color:var(--primary-color);
+}
+.my-skills{
+  font-size: 15px;
+  font-weight: 500; 
+  color: #111827;
+  margin-top: 20px;
+  text-decoration: underline;
 }
 .skills{
   display: flex;
@@ -84,10 +112,15 @@ footer{
 .skills-title{
   font-weight: 800;
   font-size: 24px;
+  color:var(--primary-color);
+}
+.skill-name{
+  color: var(--primary-color);
 }
 .skills-icon{
   font-size: 20px;
   margin: 4px;
+  color: var(--primary-color);
 }
 .skills-header{
   display: flex;
@@ -103,7 +136,7 @@ footer{
 .skills-bar{
   display: block;
   margin: 0 auto;
-  background-color: #8aaeec;
+  background-color: #9a09fc;
 }
 .skills-percentage{
   display: block;
@@ -131,6 +164,9 @@ footer{
   p{
     line-height: 1.5;
     font-size: 14px;
+  }
+  .navbar{
+    background-color: var(--bar-color);
   }
   .hero p{
     font-size: 20px;
@@ -197,4 +233,8 @@ footer{
     border-color: transparent
   }
 }
+}
+
+@media (prefer-color-scheme : dark) {
+  
 }
