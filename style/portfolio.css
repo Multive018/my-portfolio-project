@@ -71,7 +71,7 @@ button.navbar-toggler{
   color: antiquewhite;
   margin: 60px;
 }
-.about-me-paragraphs{
+.about-me-paragraph{
   line-height: 1.5;
   font-family: var(--body-font);
 }
@@ -187,8 +187,8 @@ button.navbar-toggler{
   .about-me-card{
     margin: 25px;
   }
-  .about-me-paragraphs{
-    font-size: 12px;
+  .about-me-paragraph{
+    font-size: 11px;
   }
   .card-title{
     font-size: 26px;
