@@ -304,6 +304,9 @@ img.weather-app{
     width: 250px;
     height: 250px;
   }
+  .social-media span{
+    text-align: left;
+  }
 }
 
 @media (min-width: 900px){
