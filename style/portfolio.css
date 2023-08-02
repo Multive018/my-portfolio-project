@@ -197,6 +197,31 @@ img.weather-app{
   transform: scale(1.05);
   will-change: transform;
 }
+.contacts-title{
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.contacts{
+  padding-top: 200px;
+  text-align: left;
+}
+.contact-img img{
+  display: block;
+  margin: 20px auto;
+  width: 800px;
+  height: 800px;
+}
+.contacts h2{
+  font-size: 22px;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+}
+.social-media a, span{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
 @media (max-width: 920px){
   body{
@@ -261,6 +286,23 @@ img.weather-app{
   }
   .projects h2{
     font-size: 22px;
+  }
+  .contacts{
+    margin: 0;
+    padding: 20px;
+  }
+  .contacts h2{
+    font-size: 20px;
+  }
+  .contacts-title{
+    font-size: 40px!important;
+  }
+  .contact-img{
+    margin-top: 10px;
+  }
+  .contact-img img{
+    width: 250px;
+    height: 250px;
   }
 }
 
