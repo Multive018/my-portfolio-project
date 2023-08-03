@@ -208,8 +208,8 @@ img.weather-app{
 .contact-img img{
   display: block;
   margin: 20px auto;
-  width: 800px;
-  height: 800px;
+  width: 950px;
+  height: 950px;
 }
 .contacts h2{
   font-size: 22px;
@@ -224,6 +224,31 @@ img.weather-app{
 }
 .social-media span{
   color: var(--secondary-color);
+}
+.form{
+  display: block;
+  margin: 10px auto;
+  padding: 40px;
+  max-width: 450px!important;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+.form label{
+  color: var(--secondary-color);
+}
+.form input, textarea{
+  color: var(--secondary-color)!important;
+  border: 2px solid var(--secondary-color)!important;
+  background: transparent!important;
+}
+.contact-text{
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.social-media ul{
+  list-style: none;
 }
 
 @media (max-width: 920px){
@@ -306,6 +331,10 @@ img.weather-app{
   .contact-img img{
     width: 400px;
     height: 400px;
+  }
+  .form{
+    display: block;
+    margin: 15px auto;
   }
   .contacts{
     margin: 10px;
