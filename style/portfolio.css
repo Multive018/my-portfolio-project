@@ -218,8 +218,11 @@ img.weather-app{
   display: flex;
   flex-direction: column;
 }
-.social-media a, span{
+.social-media a{
   text-decoration: none;
+  color: var(--secondary-color);
+}
+.social-media span{
   color: var(--secondary-color);
 }
 
@@ -301,10 +304,14 @@ img.weather-app{
     margin-top: 10px;
   }
   .contact-img img{
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
   }
-  .social-media span{
+  .contacts{
+    margin: 10px;
+    text-align: left;
+  }
+  .social-media{
     text-align: left;
   }
 }
