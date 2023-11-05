@@ -203,6 +203,34 @@ img.weather-app{
   transform: scale(1.05);
   will-change: transform;
 }
+
+.cv-button{
+  color: var(--bar-color);
+  border: 2px solid var(--bar-color);
+  background: transparent;
+  padding: 12px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: var(--body-font);
+  overflow: hidden;
+  transition: all 200ms ease-in-out; 
+  will-change: transform;
+  z-index: 0;
+  text-decoration: none;
+}
+
+:hover::after{
+  transform: translate(0, 0);
+} 
+.cv-button:hover{
+  border: 2px solid transparent;
+  background-color: var(--bar-color);
+  color: var(--secondary-color);
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+
 .contacts-title{
   font-size: 60px;
   margin-bottom: 0;
