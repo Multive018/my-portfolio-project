@@ -146,10 +146,16 @@ section{
   width: 95%;
 }
 .skills-css{
-  width: 85%;
+  width: 90%;
 }
 .skills-js{
-  width: 60%;
+  width: 75%;
+}
+.skills-bootstrap{
+  width: 90%;
+}
+.skills-react{
+  width: 70%;
 }
 /* projects page */
 img{
@@ -377,6 +383,3 @@ img.weather-app{
 }
 }
 
-@media (prefer-color-scheme : dark) {
-  
-}
